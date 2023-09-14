@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR BY HASSAN RAZA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">        
+        <div class="calculator">
+                <form>
+                    <div class="num-display">
+                        <input type="text" name="inputDisplay" id="result" readonly>
+                    </div>
+                    <div class="items">
+                        <input type="button" value="AC" onclick="allClear()">
+                        <input type="button" value="DEL" onclick="deletelastcharacter()">
+                        <input type="button" value="/" class="special" onclick="display('/')">
+                        <input type="button" value="." class="special" onclick="display('.')">
+                    </div>
+                    <div class="items">
+                        <input type="button" value="7" onclick="display('7')">
+                        <input type="button" value="8" onclick="display('8')">
+                        <input type="button" value="9" onclick="display('9')">
+                        <input type="button" value="*" onclick="display('*')" class="special">
+                    </div>
+                    <div class="items">
+                        <input type="button" value="4" onclick="display('4')">
+                        <input type="button" value="6" onclick="display('6')">
+                        <input type="button" value="5" onclick="display('5')">
+                        <input type="button" value="-" onclick="display('-')" class="special">
+                    </div>
+                    <div class="items">
+                        <input type="button" value="1" onclick="display('1')">
+                        <input type="button" value="2" onclick="display('2')">
+                        <input type="button" value="3" onclick="display('3')">
+                        <input type="button" value="+" onclick="display('+')" class="special">
+                    </div>
+                    <div class="items">
+                        <input type="button" value="00" onclick="display('00')">
+                        <input type="button" value="0" onclick="display('0')">
+                        <input type="button" value="=" onclick="calculate ()" class="special" id="equals">
+                    </div>
+                </form>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
